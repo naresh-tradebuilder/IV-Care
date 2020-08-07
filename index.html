@@ -21,12 +21,13 @@
    <header>
          <div class="container">
              <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3 col-md-4">
                     <img src="./images/logo.png" class="img-fluid">
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-9 col-md-8">
                   <div class="text-sm-right">
                     <ul class="menu">
+                      <img src="./images/cross.png" class="cross-icon">
                       <li>
                        <a href="javascript:void(0);">ABOUT</a> 
                       </li>
@@ -47,6 +48,7 @@
                       </li>
                     </ul>
                     <a href="javascript:void(0);" class="book-now">BOOK NOW </a>
+                    <a href="javascript:void(0);" class="bradcrumb"><img src="./images/menu.png"></a>
                   </div> <!-- text-right end -->  
                 </div>  
              </div> 
@@ -467,76 +469,18 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>       
     <script src="./js/owl.carousel.js" ></script>
     <script type="text/javascript">
-          $('.owl-carousel').owlCarousel({
-              loop:true,
-              margin:30,
-              autoplay:true,
-              autoplayTimeout:2000,
-              autoplayHoverPause:true,
-              responsiveClass:true,
-              responsive:{
-                  0:{
-                      items:1,
-                      nav:true
-                  },
-                  600:{
-                      items:1,
-                      nav:true
-                  },
-                  1000:{
-                      items:2,
-                      nav:true                      
-                  }
-              }
-          });
-
-     
-
-
-      
-        $(window).scroll(function(){
-          if($(this).scrollTop() > 20)
-          {
-            $("header .d-flex") .addClass("fixed-top");
-          }else{ 
-            $("header .d-flex") .removeClass("fixed-top");
-          }
-        });
+        
+        
            $(document).ready(function(){
-            $("#menu").click(function(){
-                 $(".header-menu") .toggleClass("show-menu");
+            $("header .bradcrumb").click(function(){
+                 $("header .menu") .addClass("show-menu");
+            });
+             $(".cross-icon").click(function(){
+                 $("header .menu") .removeClass("show-menu");
             });
         });
 
-        $(document).ready(function(){
-          $(".personal-content .a") .addClass("text-show");
-            $(".nav-item .first") .click(function(){
-               $(".personal-content .a") .addClass("text-show");
-               $(".personal-content .p,.personal-content .r,.personal-content .e,.personal-content .s,.personal-content .pa") .removeClass("text-show");
-            });
-
-            $(".nav-item .two") .click(function(){
-               $(".personal-content .p") .addClass("text-show");
-               $(".personal-content .a,.personal-content .r,.personal-content .e,.personal-content .s,.personal-content .pa") .removeClass("text-show");
-            });
-            $(".nav-item .three") .click(function(){
-               $(".personal-content .r") .addClass("text-show");
-               $(".personal-content .a,.personal-content .p,.personal-content .e,.personal-content .s,.personal-content .pa") .removeClass("text-show");
-            });
-            $(".nav-item .four") .click(function(){
-               $(".personal-content .e") .addClass("text-show");
-               $(".personal-content .a,.personal-content .r,.personal-content .p,.personal-content .s,.personal-content .pa") .removeClass("text-show");
-            });
-            $(".nav-item .five") .click(function(){
-               $(".personal-content .s") .addClass("text-show");
-               $(".personal-content .a,.personal-content .p,.personal-content .e,.personal-content .r,.personal-content .pa") .removeClass("text-show");
-            });
-            $(".nav-item .six") .click(function(){
-               $(".personal-content .pa") .addClass("text-show");
-               $(".personal-content .a,.personal-content .r,.personal-content .p,.personal-content .s,.personal-content .e") .removeClass("text-show");
-            });
-        });
-
+       
    
     </script>
   </body>

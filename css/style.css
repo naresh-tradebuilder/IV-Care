@@ -16,7 +16,7 @@ header img{
 header .text-right{
      margin-top: 20px;
 }
-header ul{display: inline-block;}
+header ul{display: inline-block;margin-top: 14px;}
 header ul li{
     display: inline-block;
 }
@@ -259,7 +259,13 @@ footer .bottom li{
 footer .bottom li:last-child{
     margin-right: 0;
 }
-
+.show-menu{
+     -webkit-transform: translateX(0%) !important;
+    -moz-transform: translateX(0%) !important;
+    -o-transform: translateX(0%) !important;
+    transform: translateX(0%) !important;
+}
+header .bradcrumb,.cross-icon{display: none;}
 
     @media only screen and (max-width: 1200px) {
        .choose-box {padding: 130px 90px;}
@@ -277,8 +283,18 @@ footer .bottom li:last-child{
       .contact-box,.choose-box{margin-bottom: 30px;}
       .contact-box h4{max-width: 100%;}
       footer h3{margin-top: 24px;}
-      header .menu{display: none;}
+      header .menu{margin-top:0;position: fixed;width: 300px;top: 0px;bottom: 0;background-color: #fff;
+    right: 0;-webkit-transform: translateX(150%);-moz-transform: translateX(150%);-o-transform: translateX(150%);
+    transform: translateX(150%);-webkit-transition: .2s ease-in-out;-moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;transition: .2s ease-in-out;border-right: .063em solid #e3e3e3;z-index: 999;}
+      header .menu li{display: block;margin-right: 0;}
+      header ul li a{text-align:left;padding: 14px 15px;border-bottom: 1px solid #231F20;font-size: 15px;display: block;}
       header .text-right {margin-top: 0px;} 
+      .cross-btn{display: block;}
+      header .bradcrumb{display: block;position: absolute;right: 17px;top: 6px;z-index: 99;}
+       header .bradcrumb img{width: auto;}
+       header .book-now{margin-right: 35px;}
+       .cross-icon{display: block;width: 5%;position: relative;left: 91%;top: 9px;}
     }       
     @media only screen and (max-width: 767px) {
          .choose-box { padding: 60px 0px;}
@@ -289,7 +305,12 @@ footer .bottom li:last-child{
          header{text-align: center;}
          header .book-now{margin-top: 25px;}
          .banner {margin-bottom: 20px;}
-         .choose-box {padding: 60px 10px;}
+         .choose-box {padding: 30px 10px 15px;}
+         .choose-box ul li span{width: 62px;font-size: 9px;}
+         .choose-box ul li {width: 28%;display: block;margin: 0 auto 20px;}
+         footer {padding: 40px 0;margin-top: 0px;}
+         header .book-now{margin-right: 0;}
+         .cross-icon{left: 44%;}
         }
 
      @media only screen and (max-width: 480px) {
