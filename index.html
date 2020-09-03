@@ -89,7 +89,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
                     consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer
                     adipiscing elit.</p>
-                    <a href="javascript:void(0);">TALK TO US</a>
+                    <a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModalCenter">TALK TO US</a>
                 </div>  
             </div>  
         </div>  <!-- row end -->
@@ -416,7 +416,37 @@
     </footer>
 
 
-
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <h4>Talk to us</h4>
+          <h6>Have a question? Fill out the form below and we will get in touch with you!</h6>
+          <form >                 
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                  <input type="Email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Contact Number">
+              </div>
+              <div class="form-group">
+                  <textarea class="form-control" rows="5"></textarea>
+              </div>
+              <button type="submit" class="submit">SUBMIT</button>  
+          </form>
+      </div>     
+    </div>
+  </div>
+</div>
 
 
     <!-- Optional JavaScript -->

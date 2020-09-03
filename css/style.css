@@ -247,6 +247,59 @@ header .book-now{
     font-size: 13px;
     width: 116px;
 }
+.modal-header{
+        border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background-color: #45C2C9;
+    padding: 9px 6px;
+    color: #fff;
+    border-radius: 0;
+}
+.modal-header .close{
+  padding: 11px 11px;
+    margin: -12px -5px;
+    color: #fff;
+    opacity: 1;
+    font-size: 18px;
+}
+.modal h4{
+      font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.modal h6{
+  font-size: 17px;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+.modal input{
+    background-color: inherit;
+    border: 1px solid #45C2C9;
+    border-radius: 0;
+    height: 48px;
+}
+.modal-content{
+  border: 1px solid #45C2C9;
+}
+.modal textarea{
+  background-color: inherit;
+    border: 1px solid #45C2C9;
+    border-radius: 0;
+}
+.modal .submit{
+       background-color: #45C2C9;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 30px;
+    font-size: 14px;
+    border: none;
+    margin-top: 0px;  
+}
+
+
 
 .about-inner-text{
      position: absolute;
