@@ -75,6 +75,36 @@ header .book-now{
     margin-top: 18px;
     font-size: 14px;
 }
+.banner form{
+  background-color: #F3F3F4;
+  padding: 65px 35px;
+}
+.banner form h3{
+      font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.banner form input,.banner form select{
+  background-color: #F3F3F4;
+    border: 1px solid #45C2C9;
+    border-radius: 0;
+}
+.banner form  button{
+        background-color: #45C2C9;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 14px;
+    border: none;
+    margin-top: 15px;
+}
+.membership-banner img{
+  height: 460px;
+    object-fit: cover;
+}
+.membership-banner .inner-text{
+  width: 400px;
+}
 .choose-box{
     background-color: #45C2C9;
     color: #fff;
@@ -138,32 +168,43 @@ header .book-now{
     margin-bottom: 55px;
 }
 .treatment-list li.nav-item a,.nav-tabs .nav-link.active{
-        background-color: #45C2C9;
-    text-align: center;
+  background-color: #45C2C9;
     font-size: 24px;
     color: #fff;
     border: none;
     border-radius: 0;
     font-weight: 600;
-    padding: 13px 0;
+    padding: 12px 25px;
     position: relative;
 }
 .nav-tabs .nav-link.active:before{
     content: "";
     background: url(../images/down-arrow.png) no-repeat;
-    padding: 11px 20px;
-    bottom: -40px;
+    padding: 12px 20px;
+    bottom: -38px;
     position: absolute;
     z-index: -1;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin-left: 30px;
     width: 0px;
 }
 .treatment-list{margin-bottom: 30px;}
 .treatment-list li{
     margin-right: 18px;
-        width: 32.2%;
+        width: 49%;
+}
+.treatment-list .img-height{
+   height: 290px;
+}
+.explore-btn{
+      background-color: #45C2C9;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 25px;
+    font-size: 12px;
+    margin-top: 50px;
 }
 .treatment-list li:last-child{margin-right: 0;}
 .treatment-list .inner-box li{
@@ -429,7 +470,7 @@ header .book-now{
     margin-right: 40px;
 }
 .inside-contact-box{     
-    padding: 100px 17px;
+    padding: 100px 17px 133px;
 }
 .inside-contact-box p{
   font-size: 15px;
