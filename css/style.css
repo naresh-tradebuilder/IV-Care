@@ -238,7 +238,7 @@ header .book-now{
     font-size: 14px;
     line-height: 19px;
 }
-.treatment-list .inner-box li a{
+.treatment-list .inner-box li .cart{
     background-color: #45C2C9;
     color: #fff;
     padding: 10px 15px;
@@ -298,8 +298,33 @@ header .book-now{
     border: none;
     margin-top: 0px;  
 }
-
-
+.modal select{
+  border: 1px solid #45C2C9;
+    border-radius: 0;
+        height: 48px;
+}
+.modal  .form-group{position: relative;}
+.modal .add{
+      position: absolute;
+    right: 15px;
+    top: 12px;
+    color: #45C2C9;
+}
+.modal .total-price{
+      font-weight: 500;
+    margin-bottom: 30px;
+}
+.modal .total-price span{
+  display: inline-block;
+  margin-left: 40px;
+}
+.modal .drip{
+      background-color: #45C2C9;
+    display: block;
+    color: #fff;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+}
 
 .about-inner-text{
      position: absolute;
@@ -583,6 +608,7 @@ header .book-now{
 .therapy-banner h4{
       margin-bottom: 4px;
       margin-top: 90px;
+      text-transform: uppercase;
 }
 .therapy-banner h5{
       font-size: 16px;
