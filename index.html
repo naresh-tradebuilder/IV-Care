@@ -525,7 +525,7 @@
                         </select>  
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Price">
+                        <input type="text" class="form-control price-top" placeholder="Price">
                     </div>  
                 </div>          
               </div>
@@ -543,7 +543,7 @@
               <input type="text" class="form-control" placeholder="Super Charge"/>
               <a href="javascript:void(0);" class="add">Add</a>
             </div>
-            <div class="total-price text-md-right">
+            <div class="total-price text-right">
                 Total  <span>$ 000</span>
             </div>  
               <button type="submit" class="submit">SCHEDULE AN APPOINTMENT</button>  
@@ -569,14 +569,22 @@
     <script type="text/javascript">
         
         $(function () {
-  $('#datetimepicker1').datetimepicker({
-    format: 'DD/MM/YYYY'
-  });
-  $('#datetimepicker3').datetimepicker({
-    format: 'HH:mm'
-  });
-});
+            $('#datetimepicker1').datetimepicker({
+              format: 'DD/MM/YYYY'
+            });
+            $('#datetimepicker3').datetimepicker({
+              format: 'HH:mm'
+            });
+          });
 
+ $(document).ready(function(){
+            $("header .bradcrumb").click(function(){
+                 $("header .menu") .addClass("show-menu");
+            });
+             $(".cross-icon").click(function(){
+                 $("header .menu") .removeClass("show-menu");
+            });
+        });
        
    
     </script>
