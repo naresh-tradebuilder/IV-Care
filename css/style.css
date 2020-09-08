@@ -189,7 +189,7 @@ header .book-now{
     margin-left: 30px;
     width: 0px;
 }
-.treatment-list{margin-bottom: 30px;}
+.treatment-list{margin-bottom: 30px;margin-top: 50px;}
 .treatment-list li{
     margin-right: 18px;
         width: 49%;
@@ -811,7 +811,7 @@ header .bradcrumb,.cross-icon{display: none;}
          .our-service-box h2, .review h2, .immunity-drip h5{margin: 0px 0 30px;}
          .immunity-box .inner{margin-bottom: 30px;}
          .therapy-banner h4{margin-top: 22px;}
-
+         .treatment-list{margin-top:0;}
         }
 
      @media only screen and (max-width: 480px) {
