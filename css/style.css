@@ -16,6 +16,11 @@ header img{
 header .text-right{
      margin-top: 20px;
 }
+.help-block.form-error{
+    color: rgb(185, 74, 72);
+    font-size: 12px;
+    font-weight: 700;
+}
 header ul{display: inline-block;margin-top: 14px;}
 header ul li{
     display: inline-block;
@@ -213,7 +218,7 @@ header .book-now{
     border: 1px solid #45C2C9;
     padding: 40px 35px 34px;
     margin-bottom: 20px;
-    width: 32.2%;
+    width: 32%;
     margin-right: 15px;
 }
 .treatment-list .inner-box li:nth-child(3n+3){
@@ -248,20 +253,18 @@ header .book-now{
     width: 116px;
 }
 .modal-header{
-        border: none;
+    border: none;
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 999;
-    background-color: #45C2C9;
-    padding: 9px 6px;
-    color: #fff;
-    border-radius: 0;
+    z-index: 999;    
+     
+    
 }
 .modal-header .close{
   padding: 11px 11px;
-    margin: -12px -5px;
-    color: #fff;
+   
+    color: #45C2C9;
     opacity: 1;
     font-size: 18px;
 }
@@ -422,7 +425,7 @@ header .book-now{
     border: 1px solid #45C2C9;
     padding: 40px 35px 34px;
     margin-bottom: 20px;
-    width: 32.2%;
+    width: 32%;
     margin-right: 15px;
 }
 .our-service-box li:last-child {

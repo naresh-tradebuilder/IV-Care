@@ -22,26 +22,35 @@
          <div class="container">
              <div class="row">
                 <div class="col-sm-3 col-md-4">
-                    <a href="index.html"><img src="./images/logo.png" class="img-fluid"></a>
+                    <a href="index.php"><img src="./images/logo.png" class="img-fluid"></a>
                 </div>
                 <div class="col-sm-9 col-md-8">
                   <div class="text-sm-right">
                     <ul class="menu">
                       <img src="./images/cross.png" class="cross-icon">
                       <li>
-                       <a href="about.html">ABOUT</a> 
+                       <a href="about.php">ABOUT</a> 
+                      </li>
+                       <li class="dropdown">
+                       <a href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TREATMENTS <span class="fa fa-caret-down"></span> </a> 
+                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="alpha-acid.php">Alpha lipoic acid</a>
+                          <a class="dropdown-item" href="hangover.php">Hangover</a>
+                          <a class="dropdown-item" href="calcium.php">EDTA Calcium “push”</a>
+                          <a class="dropdown-item" href="performance.php">Performance</a>
+                          <a class="dropdown-item" href="myers-cocktail.php">Myers Cocktail</a>                          
+                          <a class="dropdown-item" href="hydrogen-peroxide.php">Hydrogen Peroxide</a>
+                          <a class="dropdown-item" href="super-charge.php">Super Charge</a>
+                        </div>
                       </li>
                        <li>
-                       <a href="treatment.html">TREATMENTS</a> 
-                      </li>
-                       <li>
-                       <a href="packages.html" class="active">PACKAGES</a> 
+                       <a href="packages.php">PACKAGES</a> 
                       </li>
                        <li>
                        <a href="javascript:void(0);">COVID-19 TEST</a> 
                       </li>
                        <li>
-                       <a href="membership.html">MEMBERSHIP</a> 
+                       <a href="membership.php">MEMBERSHIP</a> 
                       </li>                      
                     </ul>
                     <a href="javascript:void(0);" class="book-now">(000) 000 000</a>
@@ -54,7 +63,7 @@
     <div class="therapy-banner container">
           <div class="row">
               <div class="col-md-6">
-                  <img src="./images/AMINO-ACIDS_drip.jpg" class="img-fluid">
+                  <img src="./images/ANTIOXIDANTS-drip.jpg" class="img-fluid">
                   <div class="right">  
                     <div class="right-text">              
                       <h5 class="">Sign up for an <br> IV Care membership</h5>
@@ -63,7 +72,7 @@
                   </div> 
               </div>  
               <div class="col-md-6">
-                  <h4>AMINO ACIDS</h4>
+                  <h4>ANTIOXIDANTS</h4>
                   <h5>IV THERAPY</h5>
                   <h6>Lorem ipsum dolor sit amet</h6>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
@@ -140,7 +149,7 @@ veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
              
             <div class="col-lg-9">
                 
-                    <img src="./images/AMINO-ACIDS.jpg" class="img-fluid d-block mx-auto">
+                    <img src="./images/ANTIOXIDANTS.jpg" class="img-fluid d-block mx-auto">
                    
                 
             </div>

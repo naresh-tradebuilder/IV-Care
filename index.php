@@ -15,33 +15,62 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>IVY care</title>
-     
+      <?php
+        if($_SERVER['HTTP_HOST'] == 'localhost:8080' || $_SERVER['HTTP_HOST'] == 'localhost')
+           {
+                $APIURL = 'http://imk.dev2.imkloud.com';
+                $user = "pQqXk4dgxSh873PZW";
+                $org = "7yB63oNJ4QuMtuywv";
+            } else if($_SERVER['HTTP_HOST'] == '104.197.167.156')
+           {
+                $APIURL = 'http://imk.dev2.imkloud.com';
+                $user = "pQqXk4dgxSh873PZW";
+                $org = "7yB63oNJ4QuMtuywv";
+            } else {
+                $APIURL = 'https://prod.imkloud.com';
+                $user = "gqKrCQJHBxjoXksp3";
+                $org = "jFXNrA6jbG6JMQbsr";
+            }
+            ?>
+            <script>
+         window['SERVER_URL'] = '<?php echo $APIURL ?>';
+         window['user_id'] = '<?php echo $user ?>';
+         window['group'] = '<?php echo $org ?>'; </script>
   </head>
   <body>
    <header>
          <div class="container">
              <div class="row">
                 <div class="col-sm-3 col-md-4">
-                    <a href="index.html"><img src="./images/logo.png" class="img-fluid"></a>
+                    <a href="index.php"><img src="./images/logo.png" class="img-fluid"></a>
                 </div>
                 <div class="col-sm-9 col-md-8">
                   <div class="text-sm-right">
                     <ul class="menu">
                       <img src="./images/cross.png" class="cross-icon">
                       <li>
-                       <a href="about.html">ABOUT</a> 
+                       <a href="about.php">ABOUT</a> 
+                      </li>
+                       <li class="dropdown">
+                       <a href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TREATMENTS <span class="fa fa-caret-down"></span> </a> 
+                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="alpha-acid.php">Alpha lipoic acid</a>
+                          <a class="dropdown-item" href="hangover.php">Hangover</a>
+                          <a class="dropdown-item" href="calcium.php">EDTA Calcium “push”</a>
+                          <a class="dropdown-item" href="performance.php">Performance</a>
+                          <a class="dropdown-item" href="myers-cocktail.php">Myers Cocktail</a>                          
+                          <a class="dropdown-item" href="hydrogen-peroxide.php">Hydrogen Peroxide</a>
+                          <a class="dropdown-item" href="super-charge.php">Super Charge</a>
+                        </div>
                       </li>
                        <li>
-                       <a href="treatment.html">TREATMENTS</a> 
-                      </li>
-                       <li>
-                       <a href="packages.html">PACKAGES</a> 
+                       <a href="packages.php">PACKAGES</a> 
                       </li>
                        <li>
                        <a href="javascript:void(0);">COVID-19 TEST</a> 
                       </li>
                        <li>
-                       <a href="membership.html">MEMBERSHIP</a> 
+                       <a href="membership.php">MEMBERSHIP</a> 
                       </li>                      
                     </ul>
                     <a href="javascript:void(0);" class="book-now">(000) 000 000</a>
@@ -127,115 +156,116 @@
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                   <ul class="inner-box">
+                    
                     <li>
-                       <a href="glotathione.html"><h3>GLUTATHIONE</h3></a>
+                        <h3>Alpha lipoic acid</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
+                        <a href="alpha-acid.php" class="cart">ADD TO CART</a>
+                    </li>
+                      <li>
+                        <h3>Hangover</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                        <a href="hangover.php" class="cart">ADD TO CART</a>
+                    </li>
+                      <li>
+                        <h3>EDTA Calcium “push”</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                        <a href="calcium.php" class="cart">ADD TO CART</a>
                     </li>
                     <li>
-                        <a href="vitamin-c.html"><h3>VITAMIN C</h3></a>
+                        <h3>Performance</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
+                        <a href="performance.php" class="cart">ADD TO CART</a>
                     </li>
-                    <li>
-                        <a href="vitamin-b12.html"><h3>VITAMIN B12</h3></a>
+                     <li>
+                        <h3>Myers Cocktail</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
+                        <a href="myers-cocktail.php" class="cart">ADD TO CART</a>
                     </li>
-                    <li>
-                        <a href="vitamin-d3.html"><h3>VITAMIN D3</h3></a>
+                     <li>
+                        <h3>Hydrogen Peroxide</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                      <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
+                        <a href="hydrogen-peroxide.php" class="cart">ADD TO CART</a>
                     </li>
-                    <li>
-                       <a href="lipotropic.html"> <h3>LIPOTROPIC</h3></a>
+                     <li>
+                        <h3>Super Charge</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
-                    </li>
-                    <li>
-                       <a href="alpha-acid.html"> <h3>ALPHA LIPOIC ACID</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                       <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
-                    </li>
-                    <li>
-                        <a href="hangover.html"><h3>HANGOVER</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
-                    </li>
-                    <li>
-                        <a href="calcium-push.html"><h3>EDTA CALCIUM PUSH</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
-                    </li>
-                    <li>
-                        <a href="performance.html"><h3>PERFORMANCE</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
-                    </li>                  
+                        <a href="super-charge.php" class="cart">ADD TO CART</a>
+                    </li>                
 
                   </ul>
 
               </div>              
               <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    <ul class="inner-box">
-                    <li>
-                        <a href="vitamins.html"><h3>VITAMINS</h3></a>
+                    <ul class="inner-box">                    
+                      <li>
+                       <h3>GLUTATHIONE</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                       <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
+                        <a href="glotathione.php" class="cart">ADD TO CART</a>
+                    </li>
+                    <li>
+                        <h3>VITAMIN C</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                        <a href="vitamin-c.php"  class="cart">ADD TO CART</a>
+                    </li>
+                    <li>
+                        <h3>VITAMIN B12</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                        <a href="vitamin-b12.php"  class="cart">ADD TO CART</a>
+                    </li>
+                    <li>
+                        <h3>VITAMIN D3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                      <a href="vitamin-d3.php" class="cart">ADD TO CART</a>
+                    </li>
+                    <li>
+                       <h3>LIPOTROPIC</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                        <a href="lipotropic.php" class="cart">ADD TO CART</a>
+                    </li>                   
+                    <li>
+                       <h3>VITAMINS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                       <a href="vitamins.php" class="cart">ADD TO CART</a>
                         
                     </li>
                     <li>
-                        <a href="minerals.html"><h3>MINERALS</h3></a>
+                        <h3>MINERALS</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                       <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
+                       <a href="minerals.php" class="cart">ADD TO CART</a>
                     </li>                 
                     <li>
-                       <a href="antioxidants.html"> <h3>ANTIOXIDANTS</h3></a>
+                        <h3>ANTIOXIDANTS</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
+                        <a href="antioxidants.php" class="cart">ADD TO CART</a>
                     </li>
                     <li>
-                       <a href="amino-acid.html"> <h3>AMINO ACIDS</h3></a>
+                        <h3>AMINO ACIDS</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
-                    </li>
+                        <a href="amino-acid.php" class="cart">ADD TO CART</a>
+                    </li>                    
                     <li>
-                       <a href="cocktail.html"> <h3>MYERS COCKTAIL</h3></a>
+                        <h3>ANTI AGEING</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
-                    </li>
-                    <li>
-                       <a href="anti-ageing.html"> <h3>ANTI AGEING</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
-                    </li>
-                    <li>
-                       <a href="hydrogen-peroxide.html"> <h3>HYDROGEN PEROXIDE</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
-                    </li>
-                    <li>
-                       <a href="super-charge.html"> <h3>SUPER CHARGE</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart" class="cart">ADD TO CART</a>
-                    </li>                
+                        <a href="anti-ageing.php" class="cart">ADD TO CART</a>
+                    </li>                                                  
 
                   </ul>
 
@@ -480,18 +510,18 @@
       <div class="modal-body">
           <h4>Talk to us</h4>
           <h6>Have a question? Fill out the form below and we will get in touch with you!</h6>
-          <form >                 
+          <form name="abouts" id="abouts">                 
               <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name">
+                  <input type="text" class="form-control" placeholder="Name" name="Name" data-validation="required,custom" data-validation-regexp="^[a-zA-z ]{1,}$" required="required">
               </div>
               <div class="form-group">
-                  <input type="Email" class="form-control" placeholder="Email">
+                  <input type="Email" class="form-control" placeholder="Email" name="emailId" placeholder="Email *" data-validation="email" required="required" >
               </div>
               <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Contact Number">
+                  <input type="text" class="form-control" placeholder="Contact Number" id="contactNumber" data-force-validation-if-hidden="true" data-validation="required,custom" required="required" name="contactNumber">
               </div>
               <div class="form-group">
-                  <textarea class="form-control" rows="5"></textarea>
+                  <textarea placeholder="Message" class="form-control" rows="5" data-validation="email" required="required" type="email"></textarea>
               </div>
               <button type="submit" class="submit">SUBMIT</button>  
           </form>
@@ -562,10 +592,13 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>      
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js" ></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script src="./js/index.js?ver=0.4" ></script>
     <script type="text/javascript">
         
         $(function () {
@@ -577,7 +610,7 @@
             });
           });
 
- $(document).ready(function(){
+        $(document).ready(function(){
             $("header .bradcrumb").click(function(){
                  $("header .menu") .addClass("show-menu");
             });

@@ -32,16 +32,7 @@ $(document).ready(function() {
         leadData = objectifyForm($("#" + formId).serializeArray());
         console.log(leadData); 
 
-        if (leadData.contactNumber) {
-            leadData.contactNumber = leadData.contactNumber.replace(/[-() ]+/g, "");
-            leadData.contactNumber = "+1" + leadData.contactNumber;
-        }
-        if(leadData.g-recaptcha-response){
-            leadData.g-recaptcha-response = "";
-        }
-        console.log('formId', SERVER_URL);
-
-
+        
 
         if(SERVER_URL == 'https://prod.imkloud.com'){
             console.log('leadsquared');

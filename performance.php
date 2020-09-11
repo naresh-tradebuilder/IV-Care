@@ -22,26 +22,35 @@
          <div class="container">
              <div class="row">
                 <div class="col-sm-3 col-md-4">
-                    <a href="index.html"><img src="./images/logo.png" class="img-fluid"></a>
+                    <a href="index.php"><img src="./images/logo.png" class="img-fluid"></a>
                 </div>
                 <div class="col-sm-9 col-md-8">
                   <div class="text-sm-right">
                     <ul class="menu">
                       <img src="./images/cross.png" class="cross-icon">
                       <li>
-                       <a href="about.html">ABOUT</a> 
+                       <a href="about.php">ABOUT</a> 
+                      </li>
+                       <li class="dropdown">
+                       <a href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TREATMENTS <span class="fa fa-caret-down"></span> </a> 
+                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="alpha-acid.php">Alpha lipoic acid</a>
+                          <a class="dropdown-item" href="hangover.php">Hangover</a>
+                          <a class="dropdown-item" href="calcium.php">EDTA Calcium “push”</a>
+                          <a class="dropdown-item" href="performance.php">Performance</a>
+                          <a class="dropdown-item" href="myers-cocktail.php">Myers Cocktail</a>                          
+                          <a class="dropdown-item" href="hydrogen-peroxide.php">Hydrogen Peroxide</a>
+                          <a class="dropdown-item" href="super-charge.php">Super Charge</a>
+                        </div>
                       </li>
                        <li>
-                       <a href="treatment.html">TREATMENTS</a> 
-                      </li>
-                       <li>
-                       <a href="packages.html" class="active">PACKAGES</a> 
+                       <a href="packages.php">PACKAGES</a> 
                       </li>
                        <li>
                        <a href="javascript:void(0);">COVID-19 TEST</a> 
                       </li>
                        <li>
-                       <a href="membership.html">MEMBERSHIP</a> 
+                       <a href="membership.php">MEMBERSHIP</a> 
                       </li>                      
                     </ul>
                     <a href="javascript:void(0);" class="book-now">(000) 000 000</a>
@@ -50,83 +59,19 @@
                 </div>  
              </div> 
          </div> <!-- container end -->
-    </header> 
+    </header>  
     <div class="therapy-banner container">
           <div class="row">
               <div class="col-md-6">
-                  <img src="./images/MYERS-COCKTAIL_drip.jpg" class="img-fluid">
-                  <div class="right">  
-                    <div class="right-text">              
-                      <h5 class="">Sign up for an <br> IV Care membership</h5>
-                      <a href="javascript:void(0);">SIGN UP</a>
-                    </div>  
-                  </div> 
+                  <img src="./images/PERFORMANCE-drip.jpg" class="img-fluid">
               </div>  
               <div class="col-md-6">
-                  <h4>MYERS COCKTAIL</h4>
-                  <h5>IV THERAPY</h5>
+                  <h4>Performance</h4>
+                  <h5>IV TREATMENT</h5>
                   <h6>Lorem ipsum dolor sit amet</h6>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
-                  <ul>
-                    <li class="clearfix">
-                       <div class="float-left">
-                          <div class="price">
-                              $ 60
-                          </div>  
-                          <div class="package">
-                              SINGLE SHOT
-                          </div>  
-                       </div>
-                       <div class="float-right">
-                          <a href="javascript:void(0);">ADD TO CART</a>
-                       </div> 
-                    </li>
-                       <li class="clearfix">
-                       <div class="float-left">
-                          <div class="price">
-                              $ 216
-                          </div>  
-                          <div class="package">
-                             4 SHOT PACKAGE
-                          </div>  
-                       </div>
-                       <div class="float-right">
-                          <a href="javascript:void(0);">ADD TO CART</a>
-                       </div> 
-                    </li>
-                       <li class="clearfix">
-                       <div class="float-left">
-                          <div class="price">
-                              $ 384
-                          </div>  
-                          <div class="package">
-                              8 SHOT PACKAGE
-                          </div>  
-                       </div>
-                       <div class="float-right">
-                          <a href="javascript:void(0);">ADD TO CART</a>
-                       </div> 
-                    </li>
-                       <li class="clearfix">
-                       <div class="float-left">
-                          <div class="price">
-                              $ 504
-                          </div>  
-                          <div class="package">
-                              12 SHOT PACKAGE
-                          </div>  
-                       </div>
-                       <div class="float-right">
-                          <a href="javascript:void(0);">ADD TO CART</a>
-                       </div> 
-                    </li>
-                    
-                  </ul>
+                  <p>1000cc filled with electrolytes to help muscles and nerves function and help to rid the body of byproducts of lactate metabolism. Great for before or after any type of athletic performance, to help Replenish, Restore and Revitalize your muscles and ability for your body to bounce back and increase endurance till your next performance. Helps restore natural electrolyte balances. The Branched-Chain Amino Acids help to stimulate the building of protein and reduce muscle breakdown. Additional amino acids help improve lean body mass and promote recovery from sports-related injury. Great for accelerated recovery, boosting energy, re-building muscle, reducing inflammation, aiding in tissue repair.</p>
+                  <div class="price">$180</div>
+                  <a href="javascript:void(0);">ADD TO CART</a>
               </div>  
           </div>  
     </div>  <!-- banner-end -->
@@ -138,18 +83,17 @@ veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
    <div class="container">
         <div class="row">
              
-            <div class="col-lg-9">
-                
-                    <img src="./images/MYERS-COCKTAIL.jpg" class="img-fluid d-block mx-auto">
+            <div class="col-lg-9">                
+                    <img src="./images/PERFORMANCE.jpg" class="img-fluid d-block mx-auto">
                    
                 
             </div>
             <div class="col-lg-3">
                 <div class="inside-contact-box contact-box">
-                    <h4>What’s inside Glutathione?.</h4>
+                    <h4>What’s inside the Immunity drip?</h4>
                     <p>Vitamin C + B 12 + B 1 + B2 + B3 + B5 + B6 + L-Taurine +
                         L-Glutamine + L-Arginine + Magnesium + Sodium + Calcium + Zinc + Manganese + Chromium + Selenium + Copper + Chloride + Water</p>
-                   
+                    
                 </div>  
             </div> 
         </div>  <!-- row end -->
@@ -167,7 +111,28 @@ veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
             </ul>
         </div> <!-- immunity-drip -->  
 
-        
+        <div class="row immunity-box">
+            <div class="col-md-6">
+               <div class="inner">
+                <h3>Immunity Drip</h3>            
+                
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et ac-
+cumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+<p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
+                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>    
+            </div>
+            <div class="col-md-6">
+              <div class="right">  
+                <div class="right-text">              
+                  <h5 class="">Sign up for an<br> IV Care membership</h5>
+                  <a href="javascript:void(0);">SIGN UP</a>
+                </div>  
+              </div>    
+            </div>  
+        </div> <!-- row end -->  
 
   </div> <!-- containers -->  
 

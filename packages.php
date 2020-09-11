@@ -18,30 +18,39 @@
      
   </head>
   <body>
-   <header>
+  <header>
          <div class="container">
              <div class="row">
                 <div class="col-sm-3 col-md-4">
-                    <a href="index.html"><img src="./images/logo.png" class="img-fluid"></a>
+                    <a href="index.php"><img src="./images/logo.png" class="img-fluid"></a>
                 </div>
                 <div class="col-sm-9 col-md-8">
                   <div class="text-sm-right">
                     <ul class="menu">
                       <img src="./images/cross.png" class="cross-icon">
                       <li>
-                       <a href="about.html">ABOUT</a> 
+                       <a href="about.php">ABOUT</a> 
+                      </li>
+                       <li class="dropdown">
+                       <a href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TREATMENTS <span class="fa fa-caret-down"></span> </a> 
+                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="alpha-acid.php">Alpha lipoic acid</a>
+                          <a class="dropdown-item" href="hangover.php">Hangover</a>
+                          <a class="dropdown-item" href="calcium.php">EDTA Calcium “push”</a>
+                          <a class="dropdown-item" href="performance.php">Performance</a>
+                          <a class="dropdown-item" href="myers-cocktail.php">Myers Cocktail</a>                          
+                          <a class="dropdown-item" href="hydrogen-peroxide.php">Hydrogen Peroxide</a>
+                          <a class="dropdown-item" href="super-charge.php">Super Charge</a>
+                        </div>
                       </li>
                        <li>
-                       <a href="treatment.html">TREATMENTS</a> 
-                      </li>
-                       <li>
-                       <a href="packages.html">PACKAGES</a> 
+                       <a href="packages.php">PACKAGES</a> 
                       </li>
                        <li>
                        <a href="javascript:void(0);">COVID-19 TEST</a> 
                       </li>
                        <li>
-                       <a href="membership.html" class="active">MEMBERSHIP</a> 
+                       <a href="membership.php">MEMBERSHIP</a> 
                       </li>                      
                     </ul>
                     <a href="javascript:void(0);" class="book-now">(000) 000 000</a>
@@ -51,108 +60,124 @@
              </div> 
          </div> <!-- container end -->
     </header> 
-    <div class="banner container membership-banner">
-      <div class="row">
-          <div class="col-md-6">
-              <img src="./images/Membership-Plans.png" class="img-fluid">
-              <div class="inner-text">
-                  <h3>Membership Plans</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nos-
-trud exerci tation ullamcorper suscipit lobortis dolore.</p>                 
+    <div class="therapy-banner container">
+          <div class="row">
+              <div class="col-md-6">
+                  <img src="./images/GLUTATHIONE.png" class="img-fluid">
+                  <div class="right">  
+                    <div class="right-text">              
+                      <h5 class="">Sign up for an <br> IV Care membership</h5>
+                      <a href="javascript:void(0);">SIGN UP</a>
+                    </div>  
+                  </div> 
+              </div>  
+              <div class="col-md-6">
+                  <h4>GLUTATHIONE</h4>
+                  <h5>IV THERAPY</h5>
+                  <h6>Lorem ipsum dolor sit amet</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
+                  <ul>
+                    <li class="clearfix">
+                       <div class="float-left">
+                          <div class="price">
+                              $ 60
+                          </div>  
+                          <div class="package">
+                              SINGLE SHOT
+                          </div>  
+                       </div>
+                       <div class="float-right">
+                          <a href="javascript:void(0);">ADD TO CART</a>
+                       </div> 
+                    </li>
+                       <li class="clearfix">
+                       <div class="float-left">
+                          <div class="price">
+                              $ 216
+                          </div>  
+                          <div class="package">
+                             4 SHOT PACKAGE
+                          </div>  
+                       </div>
+                       <div class="float-right">
+                          <a href="javascript:void(0);">ADD TO CART</a>
+                       </div> 
+                    </li>
+                       <li class="clearfix">
+                       <div class="float-left">
+                          <div class="price">
+                              $ 384
+                          </div>  
+                          <div class="package">
+                              8 SHOT PACKAGE
+                          </div>  
+                       </div>
+                       <div class="float-right">
+                          <a href="javascript:void(0);">ADD TO CART</a>
+                       </div> 
+                    </li>
+                       <li class="clearfix">
+                       <div class="float-left">
+                          <div class="price">
+                              $ 504
+                          </div>  
+                          <div class="package">
+                              12 SHOT PACKAGE
+                          </div>  
+                       </div>
+                       <div class="float-right">
+                          <a href="javascript:void(0);">ADD TO CART</a>
+                       </div> 
+                    </li>
+                    
+                  </ul>
               </div>  
           </div>  
-          <div class="col-md-6">
-              <form >
-                  <h3>IV Care Membership Sign Up</h3>
-                  <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name">
-                  </div>
-                  <div class="form-group">
-                      <input type="Email" class="form-control" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Contact Number">
-                  </div>
-                  <div class="form-group">
-                      <select class="form-control">
-                        <option>Plan</option>
-                        <option>Basic</option>
-                        <option>Standard</option>
-                      </select>
-                  </div>
-                  <button type="submit">PROCEED TO CART</button>  
-              </form>
-          </div>  
-      </div>  
-        
     </div>  <!-- banner-end -->
+    
+   
 
-
-     
+   
+    
    <div class="container">
-        <div class="membership-box">
-          <h2>IV Therapy Memberships</h2>
-            <ul>
-                <li>
-                   <h5>BASIC / $ 000 <sub>mo</sub></h5>
-                   <h6>00 IV TREATMENTS</h6>
-                   <ul>
-                     <li>Upto 00% discount</li>
-                     <li>Priority Booking</li>
-                     <li>00% off on suplements</li>
-                     <li>Complimentary Phone Consults</li>
-                     <li>00% off on lab tests</li>
-                   </ul> 
-                    <a href="javascript:void(0);">SIGN UP NOW</a>
-
-                </li>
-                 <li>
-                   <h5>STANDARD / $ 000 <sub>mo</sub></h5>
-                   <h6>00 IV TREATMENTS</h6>
-                   <ul>
-                     <li>Upto 00% discount</li>
-                     <li>Priority Booking</li>
-                     <li>00% off on suplements</li>
-                     <li>Complimentary Phone Consults</li>
-                     <li>00% off on lab tests</li>
-                   </ul> 
-                    <a href="javascript:void(0);">SIGN UP NOW</a>
-
-                </li>
-                 <li>
-                   <h5>SUPER / $ 000 <sub>mo</sub></h5>
-                   <h6>00 IV TREATMENTS</h6>
-                   <ul>
-                     <li>Upto 00% discount</li>
-                     <li>Priority Booking</li>
-                     <li>00% off on suplements</li>
-                     <li>Complimentary Phone Consults</li>
-                     <li>00% off on lab tests</li>
-                   </ul> 
-                    <a href="javascript:void(0);">SIGN UP NOW</a>
-                    <div class="fav"><span class="fa fa-star"></span>TOP FAVORITE</div>
-                </li>
-                 <li>
-                   <h5>ULTRA / $ 000 <sub>mo</sub></h5>
-                   <h6>00 IV TREATMENTS</h6>
-                   <ul>
-                     <li>Upto 00% discount</li>
-                     <li>Priority Booking</li>
-                     <li>00% off on suplements</li>
-                     <li>Complimentary Phone Consults</li>
-                     <li>00% off on lab tests</li>
-                   </ul> 
-                    <a href="javascript:void(0);">SIGN UP NOW</a>
-
-                </li>
-            </ul>  
-
-
-           
-          
+        <div class="row">
+             
+            <div class="col-lg-9">
+                
+                    <img src="./images/What’s-inside_Glutathione.png" class="img-fluid d-block mx-auto">
+                   
+                
+            </div>
+            <div class="col-lg-3">
+                <div class="inside-contact-box contact-box">
+                    <h4>What’s inside Glutathione?.</h4>
+                    <p>Vitamin C + B 12 + B 1 + B2 + B3 + B5 + B6 + L-Taurine +
+                        L-Glutamine + L-Arginine + Magnesium + Sodium + Calcium + Zinc + Manganese + Chromium + Selenium + Copper + Chloride + Water</p>
+                   
+                </div>  
+            </div> 
         </div>  <!-- row end -->
+
+
+
+        <div class="immunity-drip">
+            <h5>Uses for Immunity Drip</h5>
+            <ul>
+              <li>REPLENISH</li>
+              <li>REPLENISH</li>
+              <li>REPLENISH</li>
+              <li>REPLENISH</li>
+
+            </ul>
+        </div> <!-- immunity-drip -->  
+
+        
+
   </div> <!-- containers -->  
 
      <footer>
