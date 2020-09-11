@@ -38,6 +38,11 @@ header ul li a.active{
 header ul li{
     margin-right: 15px;
 }
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #45C2C9;
+}
 header .book-now{
        color: #45C2C9;
     display: inline-block;
