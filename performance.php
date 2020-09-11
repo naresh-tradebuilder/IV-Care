@@ -71,7 +71,7 @@
                   <h6>Lorem ipsum dolor sit amet</h6>
                   <p>1000cc filled with electrolytes to help muscles and nerves function and help to rid the body of byproducts of lactate metabolism. Great for before or after any type of athletic performance, to help Replenish, Restore and Revitalize your muscles and ability for your body to bounce back and increase endurance till your next performance. Helps restore natural electrolyte balances. The Branched-Chain Amino Acids help to stimulate the building of protein and reduce muscle breakdown. Additional amino acids help improve lean body mass and promote recovery from sports-related injury. Great for accelerated recovery, boosting energy, re-building muscle, reducing inflammation, aiding in tissue repair.</p>
                   <div class="price">$180</div>
-                  <a href="javascript:void(0);">ADD TO CART</a>
+                  <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart">ADD TO CART</a>
               </div>  
           </div>  
     </div>  <!-- banner-end -->
@@ -292,6 +292,57 @@ cumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
     </footer>
 
 
+
+<!-- Modal -->
+<div class="modal fade" id="add-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <h4>Item added successfully!</h4>   
+          <a href="javascript:void(0);" class="drip">Immunity Drip</a>       
+          <form > 
+              <div class="form-group">         
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-control">
+                            <option>Patients</option>
+                            <option>Low</option>
+                            <option>High</option>
+                        </select>  
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control price-top" placeholder="Price">
+                    </div>  
+                </div>          
+              </div>
+          
+              <a href="javascript:void(0);" class="drip">Add Supplements</a>  
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Vitamin C">
+                  <a href="javascript:void(0);" class="add">Add</a>
+              </div>
+              <div class="form-group">              
+              <input type="text" class="form-control" placeholder="Vitamin B12" />
+              <a href="javascript:void(0);" class="add">Add</a>
+            </div>
+            <div class="form-group">              
+              <input type="text" class="form-control" placeholder="Super Charge"/>
+              <a href="javascript:void(0);" class="add">Add</a>
+            </div>
+            <div class="total-price text-right">
+                Total  <span>$ 000</span>
+            </div>  
+              <button type="submit" class="submit">SCHEDULE AN APPOINTMENT</button>  
+          </form>
+      </div>     
+    </div>
+  </div>
+</div>
 
 
 
