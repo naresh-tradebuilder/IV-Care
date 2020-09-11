@@ -134,7 +134,7 @@
          </div>   
          <div class="col-md-4">
           <div class="img-height">
-              <img src="./images/Boosters.jpg" class="img-fluid"> 
+              <img src="./images/Boosters.png" class="img-fluid mt-md-5"> 
           </div>      
          </div>   
          <div class="col-md-4">
