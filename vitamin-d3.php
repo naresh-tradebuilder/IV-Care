@@ -92,7 +92,7 @@ veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
                           </div>  
                        </div>
                        <div class="float-right">
-                          <a href="javascript:void(0);">ADD TO CART</a>
+                          <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart"> ADD TO CART</a>
                        </div> 
                     </li>
                        <li class="clearfix">
@@ -105,7 +105,7 @@ veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
                           </div>  
                        </div>
                        <div class="float-right">
-                          <a href="javascript:void(0);">ADD TO CART</a>
+                          <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart">ADD TO CART</a>
                        </div> 
                     </li>
                        <li class="clearfix">
@@ -118,7 +118,7 @@ veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
                           </div>  
                        </div>
                        <div class="float-right">
-                          <a href="javascript:void(0);">ADD TO CART</a>
+                          <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart">ADD TO CART</a>
                        </div> 
                     </li>
                        <li class="clearfix">
@@ -131,7 +131,7 @@ veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
                           </div>  
                        </div>
                        <div class="float-right">
-                          <a href="javascript:void(0);">ADD TO CART</a>
+                          <a href="javascript:void(0);" data-toggle="modal" data-target="#add-cart">ADD TO CART</a>
                        </div> 
                     </li>
                     
@@ -336,7 +336,56 @@ veniam, quis nostrud exerci tation ullamcorper suscipit lobortis dolore.</p>
     </footer>
 
 
-
+<!-- Modal -->
+<div class="modal fade" id="add-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <h4>Item added successfully!</h4>   
+          <a href="javascript:void(0);" class="drip">Immunity Drip</a>       
+          <form > 
+              <div class="form-group">         
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="form-control">
+                            <option>Patients</option>
+                            <option>Low</option>
+                            <option>High</option>
+                        </select>  
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control price-top" placeholder="Price">
+                    </div>  
+                </div>          
+              </div>
+          
+              <a href="javascript:void(0);" class="drip">Add Supplements</a>  
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Vitamin C">
+                  <a href="javascript:void(0);" class="add">Add</a>
+              </div>
+              <div class="form-group">              
+              <input type="text" class="form-control" placeholder="Vitamin B12" />
+              <a href="javascript:void(0);" class="add">Add</a>
+            </div>
+            <div class="form-group">              
+              <input type="text" class="form-control" placeholder="Super Charge"/>
+              <a href="javascript:void(0);" class="add">Add</a>
+            </div>
+            <div class="total-price text-right">
+                Total  <span>$ 000</span>
+            </div>  
+              <button type="submit" class="submit">SCHEDULE AN APPOINTMENT</button>  
+          </form>
+      </div>     
+    </div>
+  </div>
+</div>
 
 
     <!-- Optional JavaScript -->
